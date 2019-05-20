@@ -30,7 +30,7 @@ class Solution:
                 return False
             if board[row][i] != '.' and board[row][i] == c:
                 return False
-            if board[3 * (row // 3) + i // 3][3 * (col // 3) + i % 3] != '.' and 
+            if board[3 * (row // 3) + i // 3][3 * (col // 3) + i % 3] != '.' and \
                     board[3 * (row // 3) + i // 3][3 * (col // 3) + i % 3] == c:
                 return False
         return True

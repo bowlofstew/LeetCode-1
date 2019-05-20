@@ -12,7 +12,7 @@ class Solution:
                 elif i == 0:
                     dp[i][j] = 0
                 else:
-                    dp[i][j] = dp[i - 1][j] + 
+                    dp[i][j] = dp[i - 1][j] + \
                         (dp[i - 1][j - 1] if s[i - 1] == t[j - 1] else 0)
 
         return dp[m][n]
