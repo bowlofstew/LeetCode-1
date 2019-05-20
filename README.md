@@ -15,9 +15,9 @@ Feel free to give me your feedback if any adjustment is needed. You can simply p
 ## Problem Sets
 
 <p align="center">
-  <img src="https://img.shields.io/badge/-148/1045%20=%2014.16%25%20Solved-blue.svg" />
+  <img src="https://img.shields.io/badge/-149/1045%20=%2014.26%25%20Solved-blue.svg" />
   <img src="https://img.shields.io/badge/-Easy%2046-brightgreen.svg" />
-  <img src="https://img.shields.io/badge/-Medium%2080-yellow.svg" />
+  <img src="https://img.shields.io/badge/-Medium%2081-yellow.svg" />
   <img src="https://img.shields.io/badge/-Hard%2022-red.svg" />
 </p>
 
@@ -138,7 +138,7 @@ Feel free to give me your feedback if any adjustment is needed. You can simply p
 |0113|[Path Sum II](https://leetcode.com/problems/path-sum-ii)|[C++](./solutions/cpp/0113.cpp), [Python](./solutions/python3/0113.py)|Medium|
 |0114|[Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list)|[C++](./solutions/cpp/0114.cpp), [Python](./solutions/python3/0114.py)|Medium|
 |0115|[Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences)|[C++](./solutions/cpp/0115.cpp), [Python](./solutions/python3/0115.py)|Hard|
-|0116|[Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node)||Medium|
+|0116|[Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node)|[C++](./solutions/cpp/0116.cpp), [Python](./solutions/python3/0116.py)|Medium|
 |0117|[Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii)||Medium|
 |0118|[Pascal's Triangle](https://leetcode.com/problems/pascals-triangle)|[C++](./solutions/cpp/0118.cpp)|Easy|
 |0119|[Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii)|[C++](./solutions/cpp/0119.cpp)|Easy|

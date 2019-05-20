@@ -19,10 +19,10 @@ class Solution:
         c = board[i][j]
         board[i][j] = '*'
 
-        flag = 
-            self.dfs(board, word, i + 1, j, pos + 1) or 
-            self.dfs(board, word, i - 1, j, pos + 1) or 
-            self.dfs(board, word, i, j + 1, pos + 1) or 
+        flag = \
+            self.dfs(board, word, i + 1, j, pos + 1) or \
+            self.dfs(board, word, i - 1, j, pos + 1) or \
+            self.dfs(board, word, i, j + 1, pos + 1) or \
             self.dfs(board, word, i, j - 1, pos + 1)
 
         board[i][j] = c
