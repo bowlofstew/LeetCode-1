@@ -5,6 +5,7 @@
 #         self.left = None
 #         self.right = None
 
+
 class Solution:
     def constructFromPrePost(self, pre: List[int], post: List[int]) -> TreeNode:
         return self.helper(0, 0, len(pre), pre, post)

@@ -24,4 +24,5 @@ class Solution:
         else:
             for i in range(len(nums) - n + 1):
                 if i == 0 or i > 0 and nums[i - 1] != nums[i]:
-                    self.nSum(nums[i + 1:], target - nums[i], n - 1, curr + [nums[i]], ans)
+                    self.nSum(nums[i + 1:], target - nums[i],
+                              n - 1, curr + [nums[i]], ans)

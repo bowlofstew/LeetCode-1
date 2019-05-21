@@ -5,6 +5,7 @@
 #         self.left = None
 #         self.right = None
 
+
 class Solution:
     def buildTree(self, preorder: List[int], inorder: List[int]) -> TreeNode:
         return self.helper(0, 0, len(preorder), preorder, inorder)
@@ -22,6 +23,7 @@ class Solution:
         l = k - j
 
         root.left = self.helper(i + 1, j, l, preorder, inorder)
-        root.right = self.helper(i + l + 1, j + l + 1, n - l - 1, preorder, inorder)
+        root.right = self.helper(i + l + 1, j + l + 1,
+                                 n - l - 1, preorder, inorder)
 
         return root

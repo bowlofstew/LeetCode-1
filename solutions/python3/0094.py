@@ -5,6 +5,7 @@
 #         self.left = None
 #         self.right = None
 
+
 class Solution:
     def inorderTraversal(self, root: TreeNode) -> List[int]:
         ans = []

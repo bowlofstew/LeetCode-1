@@ -14,26 +14,26 @@ public:
         if (!root) return {};
 
         vector<vector<int>> ans;
-        deque<TreeNode*> dq;
-        dq.push_back(root);
+        deque<TreeNode*> deque;
+        deque.push_back(root);
         bool leftToRight = true;
 
-        while (!dq.empty()) {
+        while (!deque.empty()) {
             vector<int> currLevel;
-            int currLevelSize = dq.size();
+            int currLevelSize = deque.size();
             for (int i = 0; i < currLevelSize; i++) {
                 if (leftToRight) {
-                    TreeNode* node = dq.front();
-                    dq.pop_front();
+                    TreeNode* node = deque.front();
+                    deque.pop_front();
                     currLevel.push_back(node->val);
-                    if (node->left) dq.push_back(node->left);
-                    if (node->right) dq.push_back(node->right);
+                    if (node->left) deque.push_back(node->left);
+                    if (node->right) deque.push_back(node->right);
                 } else {
-                    TreeNode* node = dq.back();
-                    dq.pop_back();
+                    TreeNode* node = deque.back();
+                    deque.pop_back();
                     currLevel.push_back(node->val);
-                    if (node->right) dq.push_front(node->right);
-                    if (node->left) dq.push_front(node->left);
+                    if (node->right) deque.push_front(node->right);
+                    if (node->left) deque.push_front(node->left);
                 }
             }
             ans.push_back(currLevel);

@@ -5,6 +5,7 @@
 #         self.left = None
 #         self.right = None
 
+
 class Solution:
     def maxDepth(self, root: TreeNode) -> int:
         if not root:

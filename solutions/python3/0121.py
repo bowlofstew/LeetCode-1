@@ -1,6 +1,6 @@
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
-        minPrice = 2**31 - 1
+        minPrice = float('inf')
         ans = 0
 
         for i in range(len(prices)):

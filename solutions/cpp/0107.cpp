@@ -14,18 +14,18 @@ public:
         if (!root) return {};
 
         vector<vector<int>> ans;
-        queue<TreeNode*> q;
-        q.push(root);
+        queue<TreeNode*> queue;
+        queue.push(root);
 
-        while (!q.empty()) {
+        while (!queue.empty()) {
             vector<int> currLevel;
-            int currLevelSize = q.size();
+            int currLevelSize = queue.size();
             for (int i = 0; i < currLevelSize; i++) {
-                TreeNode* node = q.front();
-                q.pop();
+                TreeNode* node = queue.front();
+                queue.pop();
                 currLevel.push_back(node->val);
-                if (node->left) q.push(node->left);
-                if (node->right) q.push(node->right);
+                if (node->left) queue.push(node->left);
+                if (node->right) queue.push(node->right);
             }
             ans.insert(ans.begin(), currLevel);
         }

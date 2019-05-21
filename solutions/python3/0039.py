@@ -5,12 +5,12 @@ class Solution:
         self.dfs(candidates, target, 0, [], ans)
         return ans
 
-    def dfs(self, candidates: List[int], target: int, s: int, curr: List[int], ans: List[List[int]]) -> None:
+    def dfs(self, candidates: List[int], target: int, s: int, path: List[int], ans: List[List[int]]) -> None:
         if target < 0:
             return
         if target == 0:
-            ans.append(curr)
+            ans.append(path)
             return
 
         for i in range(s, len(candidates)):
-            self.dfs(candidates, target - candidates[i], i, curr + [candidates[i]], ans)
+            self.dfs(candidates, target - candidates[i], i, path + [candidates[i]], ans)

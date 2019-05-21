@@ -4,6 +4,7 @@
 #         self.val = x
 #         self.next = None
 
+
 class Solution:
     def reverseKGroup(self, head: ListNode, k: int) -> ListNode:
         if not head or k == 1:

@@ -5,6 +5,7 @@
 #         self.left = None
 #         self.right = None
 
+
 class Solution:
     def pathSum(self, root: TreeNode, sum: int) -> List[List[int]]:
         ans = []

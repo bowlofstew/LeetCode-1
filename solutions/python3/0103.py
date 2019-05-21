@@ -5,32 +5,33 @@
 #         self.left = None
 #         self.right = None
 
+
 class Solution:
     def zigzagLevelOrder(self, root: TreeNode) -> List[List[int]]:
         if not root:
             return []
 
         ans = []
-        dq = collections.deque([root])
+        deque = collections.deque([root])
         leftToRight = True
 
-        while dq:
+        while deque:
             currLevel = []
-            for i in range(len(dq)):
+            for i in range(len(deque)):
                 if leftToRight:
-                    node = dq.popleft()
+                    node = deque.popleft()
                     currLevel.append(node.val)
                     if node.left:
-                        dq.append(node.left)
+                        deque.append(node.left)
                     if node.right:
-                        dq.append(node.right)
+                        deque.append(node.right)
                 else:
-                    node = dq.pop()
+                    node = deque.pop()
                     currLevel.append(node.val)
                     if node.right:
-                        dq.appendleft(node.right)
+                        deque.appendleft(node.right)
                     if node.left:
-                        dq.appendleft(node.left)
+                        deque.appendleft(node.left)
             ans.append(currLevel)
             leftToRight = not leftToRight
 

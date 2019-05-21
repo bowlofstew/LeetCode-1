@@ -5,6 +5,7 @@
 #         self.left = None
 #         self.right = None
 
+
 class Solution:
     def sortedArrayToBST(self, nums: List[int]) -> TreeNode:
         return self.helper(nums, 0, len(nums) - 1)

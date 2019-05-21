@@ -5,23 +5,24 @@
 #         self.left = None
 #         self.right = None
 
+
 class Solution:
     def minDepth(self, root: TreeNode) -> int:
         if not root:
             return 0
 
         ans = 0
-        q = collections.deque([root])
+        queue = collections.deque([root])
 
-        while q:
+        while queue:
             ans += 1
-            for i in range(len(q)):
-                node = q.popleft()
+            for i in range(len(queue)):
+                node = queue.popleft()
                 if not node.left and not node.right:
                     return ans
                 if node.left:
-                    q.append(node.left)
+                    queue.append(node.left)
                 if node.right:
-                    q.append(node.right)
+                    queue.append(node.right)
 
         return -1

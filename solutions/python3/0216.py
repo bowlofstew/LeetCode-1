@@ -4,13 +4,13 @@ class Solution:
         self.dfs(k, n, 1, [], ans)
         return ans
 
-    def dfs(self, k: int, n: int, s: int, curr: List[int], ans: List[List[int]]) -> None:
+    def dfs(self, k: int, n: int, s: int, path: List[int], ans: List[List[int]]) -> None:
         if n < 0:
             return
         if n == 0:
             if k == 0:
-                ans.append(curr)
+                ans.append(path)
                 return
 
         for i in range(s, 10):
-            self.dfs(k - 1, n - i, i + 1, curr + [i], ans)
+            self.dfs(k - 1, n - i, i + 1, path + [i], ans)

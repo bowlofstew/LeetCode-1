@@ -3,8 +3,8 @@ class Solution:
         if not s or not t:
             return ""
 
-        dict_t = collections.Counter(t)
-        required = len(dict_t)
+        map = collections.Counter(t)
+        required = len(map)
 
         l = 0
         r = 0
@@ -13,9 +13,9 @@ class Solution:
         windowLen = len(s) + 1
 
         for r in range(len(s)):
-            if s[r] in dict_t:
-                dict_t[s[r]] -= 1
-                if dict_t[s[r]] == 0:
+            if s[r] in map:
+                map[s[r]] -= 1
+                if map[s[r]] == 0:
                     required -= 1
 
             while required == 0 and l <= r:
@@ -24,9 +24,9 @@ class Solution:
                     bestLeft = l
                     bestRight = r
 
-                if s[l] in dict_t:
-                    dict_t[s[l]] += 1
-                    if dict_t[s[l]] > 0:
+                if s[l] in map:
+                    map[s[l]] += 1
+                    if map[s[l]] > 0:
                         required += 1
 
                 l += 1

@@ -1,8 +1,5 @@
 class Solution:
     def solveSudoku(self, board: List[List[str]]) -> None:
-        """
-        Do not return anything, modify board in-place instead.
-        """
         self.dfs(0, board)
 
     def dfs(self, s: int, board: List[List[str]]) -> bool:

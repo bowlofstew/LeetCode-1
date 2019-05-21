@@ -1,15 +1,13 @@
-from collections import defaultdict
-
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         ans = []
-        dict = defaultdict(list)
+        map = collections.defaultdict(list)
 
         for str in strs:
             s = ''.join(sorted(str))
-            dict[s].append(str)
+            map[s].append(str)
 
-        for value in dict.values():
+        for value in map.values():
             ans.append(value)
 
         return ans

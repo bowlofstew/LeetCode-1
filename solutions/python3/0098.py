@@ -5,6 +5,7 @@
 #         self.left = None
 #         self.right = None
 
+
 class Solution:
     def isValidBST(self, root: TreeNode) -> bool:
         return self.helper(root, None, None)

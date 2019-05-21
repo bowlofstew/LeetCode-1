@@ -11,7 +11,7 @@ class Solution:
         r = len(nums)
 
         while l < r:
-            m = (l + r) // 2
+            m = (l + r) >> 1
             if target < nums[m] or (isLeft and target == nums[m]):
                 r = m
             else:

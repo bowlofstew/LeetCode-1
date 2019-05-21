@@ -5,6 +5,7 @@
 #         self.left = None
 #         self.right = None
 
+
 class Solution:
     def isSameTree(self, p: TreeNode, q: TreeNode) -> bool:
         if not p or not q:

@@ -6,6 +6,7 @@
 
 from heapq import heappush, heappop
 
+
 class Solution:
     def mergeKLists(self, lists: List[ListNode]) -> ListNode:
         dummy = ListNode(0)

@@ -12,6 +12,8 @@ class Solution:
                 elif j == 0:
                     dp[i][j] = i
                 else:
-                    dp[i][j] = min(dp[i - 1][j - 1] + (0 if word1[i - 1] == word2[j - 1] else 1), dp[i - 1][j] + 1, dp[i][j - 1] + 1)
+                    dp[i][j] = min(dp[i - 1][j - 1] + (0 if word1[i - 1] == word2[j - 1] else 1), \
+                                   dp[i - 1][j] + 1, \
+                                   dp[i][j - 1] + 1)
 
         return dp[m][n]

@@ -5,6 +5,7 @@
 #         self.left = None
 #         self.right = None
 
+
 class Solution:
     def generateTrees(self, n: int) -> List[TreeNode]:
         if n == 0:

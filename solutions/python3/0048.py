@@ -1,8 +1,5 @@
 class Solution:
     def rotate(self, matrix: List[List[int]]) -> None:
-        """
-        Do not return anything, modify matrix in-place instead.
-        """
         for layer in range(len(matrix) // 2):
             first = layer
             last = len(matrix) - 1 - layer

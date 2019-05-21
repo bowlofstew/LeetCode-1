@@ -15,7 +15,8 @@ class Solution:
         def isValidSquare(board: List[List[str]]) -> bool:
             for i in (0, 3, 6):
                 for j in (0, 3, 6):
-                    square = [board[x][y] for x in range(i, i + 3) for y in range(j, j + 3)]
+                    square = [board[x][y]
+                              for x in range(i, i + 3) for y in range(j, j + 3)]
                     if isValid(square) == False:
                         return False
             return True

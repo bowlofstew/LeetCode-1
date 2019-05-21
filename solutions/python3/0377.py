@@ -9,8 +9,10 @@ class Solution:
             return 0
         if m[target] != -1:
             return m[target]
+
         ans = 0
         for num in nums:
             ans += self.dp(nums, target - num, m)
+
         m[target] = ans
         return ans

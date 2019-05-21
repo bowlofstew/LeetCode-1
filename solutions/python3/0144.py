@@ -5,6 +5,7 @@
 #         self.left = None
 #         self.right = None
 
+
 class Solution:
     def preorderTraversal(self, root: TreeNode) -> List[int]:
         if not root:

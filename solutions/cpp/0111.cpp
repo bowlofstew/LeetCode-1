@@ -14,18 +14,18 @@ public:
         if (!root) return 0;
 
         int ans = 0;
-        queue<TreeNode*> q;
-        q.push(root);
+        queue<TreeNode*> queue;
+        queue.push(root);
 
-        while (!q.empty()) {
+        while (!queue.empty()) {
             ans++;
-            int qSize = q.size();
-            for (int i = 0; i < qSize; i++) {
-                TreeNode* node = q.front();
-                q.pop();
+            int queueSize = queue.size();
+            for (int i = 0; i < queueSize; i++) {
+                TreeNode* node = queue.front();
+                queue.pop();
                 if (!node->left && !node->right) return ans;
-                if (node->left) q.push(node->left);
-                if (node->right) q.push(node->right);
+                if (node->left) queue.push(node->left);
+                if (node->right) queue.push(node->right);
             }
         }
 
