@@ -1,6 +1,6 @@
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
-        ret = 0
+        ans = 0
         map = {}
 
         i = 0
@@ -8,7 +8,7 @@ class Solution:
             c = s[j]
             if c in map:
                 i = max(i, map[c])
-            ret = max(ret, j - i + 1)
+            ans = max(ans, j - i + 1)
             map[c] = j + 1
 
-        return ret
+        return ans

@@ -5,10 +5,10 @@ public:
         for (int i = 0; i < nums.size(); i++)
             map[nums[i]]++;
         
-        vector<int> ret;
+        vector<int> ans;
         for (auto it = map.begin(); it != map.end(); it++)
             if (it->second > nums.size() / 3)
-                ret.push_back(it->first);
-        return ret;
+                ans.push_back(it->first);
+        return ans;
     }
 };

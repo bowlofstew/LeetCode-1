@@ -9,7 +9,7 @@
 class Solution {
 public:
     vector<ListNode*> splitListToParts(ListNode* root, int k) {
-        vector<ListNode*> ret(k, NULL);
+        vector<ListNode*> ans(k, NULL);
         int len = 0;
         for (auto curr = root; curr; curr = curr->next) len++;
         int l = len / k;
@@ -18,7 +18,7 @@ public:
         ListNode* head = root;
         ListNode* prev = NULL;
         for (int i = 0; i < k; i++, r--) {
-            ret[i] = head;
+            ans[i] = head;
             for (int j = 0; j < l + (r > 0); j++) {
                 prev = head;
                 head = head->next;
@@ -26,6 +26,6 @@ public:
             if (prev) prev->next = NULL;
         }
 
-        return ret;
+        return ans;
     }
 };

@@ -10,13 +10,13 @@ class Solution {
 public:
     int numComponents(ListNode* head, vector<int>& G) {
         unordered_set<int> g(G.begin(), G.end());
-        int ret = 0;
+        int ans = 0;
         while (head) {
             if (g.count(head->val) &&
                 (!head->next || !g.count(head->next->val)))
-                ret++;
+                ans++;
             head = head->next;
         }
-        return ret;
+        return ans;
     }
 };

@@ -1,13 +1,13 @@
 class Solution {
 public:
-    string getHint(string secret, string guess) {
+    string getHint(string secans, string guess) {
         int A(0), B(0);
         map<char, int> map1;
         map<char, int> map2;
-        for (int i = 0; i < secret.length(); i++) {
-            if (secret[i] == guess[i]) A++;
+        for (int i = 0; i < secans.length(); i++) {
+            if (secans[i] == guess[i]) A++;
             else {
-                map1[secret[i]]++;
+                map1[secans[i]]++;
                 map2[guess[i]]++;
             }
         }

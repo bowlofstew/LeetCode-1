@@ -1,7 +1,7 @@
 class Solution {
 public:
     int trap(vector<int>& height) {
-        int ret = 0;
+        int ans = 0;
         int l = 0;
         int r = height.size() - 1;
         int leftMax = 0;
@@ -12,17 +12,17 @@ public:
                 if (height[l] >= leftMax)
                     leftMax = height[l];
                 else
-                    ret += (leftMax - height[l]);
+                    ans += (leftMax - height[l]);
                 l++;
             } else {
                 if (height[r] >= rightMax)
                     rightMax = height[r];
                 else
-                    ret += (rightMax - height[r]);
+                    ans += (rightMax - height[r]);
                 r--;
             }
         }
 
-        return ret;
+        return ans;
     }
 };

@@ -1,17 +1,17 @@
 class Solution {
 public:
     vector<vector<int>> permute(vector<int>& nums) {
-        vector<vector<int>> ret;
+        vector<vector<int>> ans;
         vector<int> curr;
         vector<bool> used(nums.size(), false);
-        dfs(nums, nums.size(), used, curr, ret);
-        return ret;
+        dfs(nums, nums.size(), used, curr, ans);
+        return ans;
     }
 
 private:
-    void dfs(vector<int>& nums, int target, vector<bool>& used, vector<int>& curr, vector<vector<int>>& ret) {
+    void dfs(vector<int>& nums, int target, vector<bool>& used, vector<int>& curr, vector<vector<int>>& ans) {
         if (target == 0) {
-            ret.push_back(curr);
+            ans.push_back(curr);
             return;
         }
 
@@ -19,7 +19,7 @@ private:
             if (used[i]) continue;
             used[i] = true;
             curr.push_back(nums[i]);
-            dfs(nums, target - 1, used, curr, ret);
+            dfs(nums, target - 1, used, curr, ans);
             curr.pop_back();
             used[i] = false;
         }

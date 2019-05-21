@@ -10,7 +10,7 @@ class Solution:
         if not root:
             return []
 
-        ret = []
+        ans = []
         dq = collections.deque([root])
         leftToRight = True
 
@@ -31,7 +31,7 @@ class Solution:
                         dq.appendleft(node.right)
                     if node.left:
                         dq.appendleft(node.left)
-            ret.append(currLevel)
+            ans.append(currLevel)
             leftToRight = not leftToRight
 
-        return ret
+        return ans

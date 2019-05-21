@@ -4,7 +4,7 @@ public:
         if (dividend == INT_MIN && divisor == -1) return INT_MAX;
 
         int sign = dividend > 0 ^ divisor > 0 ? -1 : 1;
-        long ret = 0;
+        long ans = 0;
         long dvd = labs(dividend);
         long dvs = labs(divisor);
 
@@ -16,9 +16,9 @@ public:
                 temp <<= 1;
             }
             dvd -= temp;
-            ret += m;
+            ans += m;
         }
 
-        return sign * ret;
+        return sign * ans;
     }
 };

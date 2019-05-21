@@ -9,7 +9,7 @@ public:
         for (int i = 0; i < graph.size(); i++)
             q.push({i, 1 << i});
 
-        int ret = 0;
+        int ans = 0;
         while (!q.empty()) {
             int s = q.size();
             while (s--) {
@@ -17,13 +17,13 @@ public:
                 q.pop();
                 int node = p.first;
                 int state = p.second;
-                if (state == goal) return ret;
+                if (state == goal) return ans;
                 if (visited[node][state]) continue;
                 visited[node][state] = 1;
                 for (int next : graph[node])
                     q.push({next, state | (1 << next)});
             }
-            ret++;
+            ans++;
         }
 
         return -1;

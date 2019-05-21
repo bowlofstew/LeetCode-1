@@ -1,9 +1,9 @@
 class Solution:
     def grayCode(self, n: int) -> List[int]:
-        ret = [0]
+        ans = [0]
 
         for i in range(n):
-            for j in range(len(ret) - 1, -1, -1):
-                ret.append(ret[j] | 1 << i)
+            for j in range(len(ans) - 1, -1, -1):
+                ans.append(ans[j] | 1 << i)
 
-        return ret
+        return ans

@@ -1,12 +1,12 @@
 class Solution {
 public:
     vector<int> grayCode(int n) {
-        vector<int> ret = {0};
+        vector<int> ans = {0};
 
         for (int i = 0; i < n; i++)
-            for (int j = ret.size() - 1; j >= 0; j--)
-                ret.push_back(ret[j] | 1 << i);
+            for (int j = ans.size() - 1; j >= 0; j--)
+                ans.push_back(ans[j] | 1 << i);
 
-        return ret;
+        return ans;
     }
 };

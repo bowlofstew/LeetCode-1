@@ -4,7 +4,7 @@ class Solution:
             return 2 ** 31 - 1
 
         sign = -1 if (dividend > 0) ^ (divisor > 0) else 1
-        ret = 0
+        ans = 0
         dividend = abs(dividend)
         divisor = abs(divisor)
 
@@ -15,6 +15,6 @@ class Solution:
                 m <<= 1
                 temp <<= 1
             dividend -= temp
-            ret += m
+            ans += m
 
-        return sign * ret
+        return sign * ans

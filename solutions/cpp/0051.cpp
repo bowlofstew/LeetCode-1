@@ -1,19 +1,19 @@
 class Solution {
 public:
     vector<vector<string>> solveNQueens(int n) {
-        vector<vector<string>> ret;
+        vector<vector<string>> ans;
         vector<string> board(n, string(n, '.'));
         vector<bool> cols(n, false);
         vector<bool> diag1(2 * n - 1, false);
         vector<bool> diag2(2 * n - 1, false);
-        dfs(0, cols, diag1, diag2, board, ret);
-        return ret;
+        dfs(0, cols, diag1, diag2, board, ans);
+        return ans;
     }
 
 private:
-    void dfs(int y, vector<bool>& cols, vector<bool>& diag1, vector<bool>& diag2, vector<string>& board, vector<vector<string>>& ret) {
+    void dfs(int y, vector<bool>& cols, vector<bool>& diag1, vector<bool>& diag2, vector<string>& board, vector<vector<string>>& ans) {
         if (y == cols.size()) {
-            ret.push_back(board);
+            ans.push_back(board);
             return;
         }
 
@@ -21,7 +21,7 @@ private:
             if (!cols[x] && !diag1[x + y] && !diag2[x - y + cols.size() - 1]) {
                 board[y][x] = 'Q';
                 cols[x] = diag1[x + y] = diag2[x - y + cols.size() - 1] = true;
-                dfs(y + 1, cols, diag1, diag2, board, ret);
+                dfs(y + 1, cols, diag1, diag2, board, ans);
                 cols[x] = diag1[x + y] = diag2[x - y + cols.size() - 1] = false;
                 board[y][x] = '.';
             }

@@ -5,19 +5,19 @@ public:
         for (int i = 0; i < list1.size(); i++) 
             indices[list1[i]] = i;
 
-        vector<string> ret;
+        vector<string> ans;
         int least = INT_MAX;
 
         for (int i = 0; i < list2.size(); i++) {
             if (!indices.count(list2[i])) continue;
             int sum = indices[list2[i]] + i;
-            if (sum < least) ret.clear();
+            if (sum < least) ans.clear();
             if (sum <= least) {
                 least = sum;
-                ret.push_back(list2[i]);
+                ans.push_back(list2[i]);
             }
         }
 
-        return ret;
+        return ans;
     }
 };

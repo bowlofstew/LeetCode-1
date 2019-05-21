@@ -1,6 +1,6 @@
 class Solution:
     def getPermutation(self, n: int, k: int) -> str:
-        ret = ''
+        ans = ''
         nums = [i + 1 for i in range(n)]
         fact = [1] * n
 
@@ -12,7 +12,7 @@ class Solution:
         for i in range(n, 0, -1):
             j = k // fact[i - 1]
             k %= fact[i - 1]
-            ret += str(nums[j])
+            ans += str(nums[j])
             nums.pop(j)
 
-        return ret
+        return ans

@@ -12,7 +12,7 @@ public:
     vector<vector<int>> zigzagLevelOrder(TreeNode* root) {
         if (!root) return {};
 
-        vector<vector<int>> ret;
+        vector<vector<int>> ans;
         deque<TreeNode*> dq;
         dq.push_back(root);
         bool leftToRight = true;
@@ -35,10 +35,10 @@ public:
                     if (node->left) dq.push_front(node->left);
                 }
             }
-            ret.push_back(currLevel);
+            ans.push_back(currLevel);
             leftToRight = !leftToRight;
         }
 
-        return ret;
+        return ans;
     }
 };

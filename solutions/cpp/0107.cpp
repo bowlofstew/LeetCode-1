@@ -12,7 +12,7 @@ public:
     vector<vector<int>> levelOrderBottom(TreeNode* root) {
         if (!root) return {};
 
-        vector<vector<int>> ret;
+        vector<vector<int>> ans;
         queue<TreeNode*> q;
         q.push(root);
 
@@ -26,9 +26,9 @@ public:
                 if (node->left) q.push(node->left);
                 if (node->right) q.push(node->right);
             }
-            ret.insert(ret.begin(), currLevel);
+            ans.insert(ans.begin(), currLevel);
         }
 
-        return ret;
+        return ans;
     }
 };

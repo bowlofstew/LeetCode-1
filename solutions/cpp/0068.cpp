@@ -1,7 +1,7 @@
 class Solution {
 public:
     vector<string> fullJustify(vector<string>& words, int maxWidth) {
-        vector<string> ret;
+        vector<string> ans;
         vector<string> curr;
         int numOfLetters = 0;
 
@@ -12,16 +12,16 @@ public:
                         ? curr[0].append(" ")
                         : curr[i % (curr.size() - 1)].append(" ");
                 }
-                ret.push_back(join(curr, ""));
+                ans.push_back(join(curr, ""));
                 curr.clear();
                 numOfLetters = 0;
             }
             curr.push_back(word);
             numOfLetters += word.size();
         }
-        ret.push_back(ljust(join(curr, " "), maxWidth));
+        ans.push_back(ljust(join(curr, " "), maxWidth));
 
-        return ret;
+        return ans;
     }
 
 private:

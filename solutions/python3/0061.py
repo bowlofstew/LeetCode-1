@@ -29,8 +29,8 @@ class Solution:
             slow = slow.next
             fast = fast.next
 
-        ret = slow.next
+        ans = slow.next
         slow.next = None
         fast.next = head
 
-        return ret
+        return ans

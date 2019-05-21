@@ -7,7 +7,7 @@
 
 class Solution:
     def inorderTraversal(self, root: TreeNode) -> List[int]:
-        ret = []
+        ans = []
         stack = []
         curr = root
 
@@ -16,7 +16,7 @@ class Solution:
                 stack.append(curr)
                 curr = curr.left
             curr = stack.pop()
-            ret.append(curr.val)
+            ans.append(curr.val)
             curr = curr.right
 
-        return ret
+        return ans

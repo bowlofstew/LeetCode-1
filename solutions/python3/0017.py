@@ -3,16 +3,16 @@ class Solution:
         if not digits:
             return []
 
-        ret = ['']
+        ans = ['']
 
         map = {'2': 'abc', '3': 'def', '4': 'ghi', '5': 'jkl',
                '6': 'mno', '7': 'pqrs', '8': 'tuv', '9': 'wxyz'}
 
         for i in digits:
             tmp = []
-            for j in ret:
+            for j in ans:
                 for k in map[i]:
                     tmp.append(j + k)
-            ret = tmp
+            ans = tmp
 
-        return ret
+        return ans

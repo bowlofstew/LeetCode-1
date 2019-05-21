@@ -5,7 +5,7 @@ public:
         if (m == 0) return {};
         const int n = matrix[0].size();
 
-        vector<int> ret(m * n);
+        vector<int> ans(m * n);
         int count = 0;
         int direction = 0;
 
@@ -15,29 +15,29 @@ public:
         int right = n - 1;
 
         while (true) {
-            if (up > down || right < left) return ret;
+            if (up > down || right < left) return ans;
 
             if (direction == 0) {
                 for (int i = left; i <= right; i++)
-                    ret[count++] = matrix[up][i];
+                    ans[count++] = matrix[up][i];
                 up++;
             } else if (direction == 1) {
                 for (int i = up; i <= down; i++)
-                    ret[count++] = matrix[i][right];
+                    ans[count++] = matrix[i][right];
                 right--;
             } else if (direction == 2) {
                 for (int i = right; i >= left; i--)
-                    ret[count++] = matrix[down][i];
+                    ans[count++] = matrix[down][i];
                 down--;
             } else {
                 for (int i = down; i >= up; i--)
-                    ret[count++] = matrix[i][left];
+                    ans[count++] = matrix[i][left];
                 left++;
             }
 
             direction = (direction + 1) % 4;
         }
 
-        return ret;
+        return ans;
     }
 };

@@ -10,7 +10,7 @@ class Solution:
         if not root:
             return []
 
-        ret = []
+        ans = []
         q = collections.deque([root])
 
         while q:
@@ -22,6 +22,6 @@ class Solution:
                     q.append(node.left)
                 if node.right:
                     q.append(node.right)
-            ret.insert(0, currLevel)
+            ans.insert(0, currLevel)
 
-        return ret
+        return ans

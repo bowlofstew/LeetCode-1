@@ -1,15 +1,15 @@
 class Solution {
 public:
     vector<vector<int>> fourSum(vector<int>& nums, int target) {
-        vector<vector<int>> ret;
+        vector<vector<int>> ans;
         vector<int> curr;
         sort(nums.begin(), nums.end());
-        nSum(nums, target, 4, curr, ret);
-        return ret;
+        nSum(nums, target, 4, curr, ans);
+        return ans;
     }
 
 private:
-    void nSum(vector<int>& nums, int target, int n, vector<int>& curr, vector<vector<int>>& ret) {
+    void nSum(vector<int>& nums, int target, int n, vector<int>& curr, vector<vector<int>>& ans) {
         if (nums.size() < n || n < 2 || target < nums[0] * n || target > nums.back() * n)
             return;
 
@@ -20,7 +20,7 @@ private:
                 if (nums[l] + nums[r] == target) {
                     vector<int> vec(curr);
                     vec.insert(vec.end(), {nums[l], nums[r]});
-                    ret.push_back(vec);
+                    ans.push_back(vec);
                     l++;
                     while (l < r && nums[l] == nums[l - 1]) l++;
                 } else if (nums[l] + nums[r] < target) {
@@ -36,7 +36,7 @@ private:
                     vector<int>::const_iterator last = nums.end();
                     vector<int> newNums(first, last);
                     curr.push_back(nums[i]);
-                    nSum(newNums, target - nums[i], n - 1, curr, ret);
+                    nSum(newNums, target - nums[i], n - 1, curr, ans);
                     curr.pop_back();
                 }
             }

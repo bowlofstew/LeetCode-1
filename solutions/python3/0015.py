@@ -3,7 +3,7 @@ class Solution:
         if len(nums) < 3:
             return []
 
-        ret = []
+        ans = []
         nums.sort()
 
         for i in range(len(nums) - 2):
@@ -13,7 +13,7 @@ class Solution:
                 target = -nums[i]
                 while l < r:
                     if nums[l] + nums[r] == target:
-                        ret.append((nums[i], nums[l], nums[r]))
+                        ans.append((nums[i], nums[l], nums[r]))
                         while l < r and nums[l] == nums[l + 1]:
                             l += 1
                         while l < r and nums[r] == nums[r - 1]:
@@ -25,4 +25,4 @@ class Solution:
                     else:
                         r -= 1
 
-        return ret
+        return ans

@@ -16,10 +16,10 @@ public:
 
 private:
     vector<TreeNode*> helper(int min, int max) {
-        vector<TreeNode*> ret;
+        vector<TreeNode*> ans;
         if (min > max) {
-            ret.push_back(NULL);
-            return ret;
+            ans.push_back(NULL);
+            return ans;
         }
 
         for (int i = min; i <= max; i++) {
@@ -30,11 +30,11 @@ private:
                     TreeNode* root = new TreeNode(i);
                     root->left = left;
                     root->right = right;
-                    ret.push_back(root);
+                    ans.push_back(root);
                 }
             }
         }
 
-        return ret;
+        return ans;
     }
 };

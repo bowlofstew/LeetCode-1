@@ -7,11 +7,11 @@ class Solution:
                 break
         intervals.insert(index, newInterval)
 
-        ret = []
+        ans = []
         for interval in intervals:
-            if not ret or interval[0] > ret[-1][1]:
-                ret.append(interval)
+            if not ans or interval[0] > ans[-1][1]:
+                ans.append(interval)
             else:
-                ret[-1][1] = max(ret[-1][1], interval[1])
+                ans[-1][1] = max(ans[-1][1], interval[1])
 
-        return ret
+        return ans

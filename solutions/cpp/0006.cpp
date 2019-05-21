@@ -12,13 +12,13 @@ public:
             k += direction;
         }
 
-        string ret(s);
+        string ans(s);
         k = 0;
 
         for (int i = 0; i < numRows; i++)
             for (int j = 0; j < rows[i].size(); j++)
-                ret[k++] = rows[i][j];
+                ans[k++] = rows[i][j];
 
-        return ret;
+        return ans;
     }
 };

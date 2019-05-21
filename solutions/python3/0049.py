@@ -2,7 +2,7 @@ from collections import defaultdict
 
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        ret = []
+        ans = []
         dict = defaultdict(list)
 
         for str in strs:
@@ -10,6 +10,6 @@ class Solution:
             dict[s].append(str)
 
         for value in dict.values():
-            ret.append(value)
+            ans.append(value)
 
-        return ret
+        return ans

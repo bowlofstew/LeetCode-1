@@ -10,7 +10,7 @@
 class Solution {
 public:
     vector<int> inorderTraversal(TreeNode* root) {
-        vector<int> ret;
+        vector<int> ans;
         stack<TreeNode*> stack;
         TreeNode* curr = root;
 
@@ -21,10 +21,10 @@ public:
             }
             curr = stack.top();
             stack.pop();
-            ret.push_back(curr->val);
+            ans.push_back(curr->val);
             curr = curr->right;
         }
 
-        return ret;
+        return ans;
     }
 };

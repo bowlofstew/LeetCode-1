@@ -1,12 +1,12 @@
 class Solution:
     def restoreIpAddresses(self, s: str) -> List[str]:
-        ret = []
-        self.dfs(s, 0, 0, [""] * 4, ret)
-        return ret
+        ans = []
+        self.dfs(s, 0, 0, [""] * 4, ans)
+        return ans
 
-    def dfs(self, s: str, depth: int, index: int, curr: List[str], ret: List[str]) -> None:
+    def dfs(self, s: str, depth: int, index: int, curr: List[str], ans: List[str]) -> None:
         if depth == 4 and index == len(s):
-            ret.append(".".join(curr))
+            ans.append(".".join(curr))
             return
         if depth == 4 or index == len(s):
             return
@@ -20,5 +20,5 @@ class Solution:
             if int(temp) > 255:
                 return
             curr[depth] = temp
-            self.dfs(s, depth + 1, index + i, curr, ret)
+            self.dfs(s, depth + 1, index + i, curr, ans)
             curr[depth] = ""

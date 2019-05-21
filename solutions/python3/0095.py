@@ -12,10 +12,10 @@ class Solution:
         return self.helper(1, n)
 
     def helper(self, min: int, max: int) -> List[TreeNode]:
-        ret = []
+        ans = []
         if min > max:
-            ret.append(None)
-            return ret
+            ans.append(None)
+            return ans
 
         for i in range(min, max + 1):
             leftTree = self.helper(min, i - 1)
@@ -25,6 +25,6 @@ class Solution:
                     root = TreeNode(i)
                     root.left = left
                     root.right = right
-                    ret.append(root)
+                    ans.append(root)
 
-        return ret
+        return ans

@@ -1,6 +1,6 @@
 class Solution:
     def trap(self, height: List[int]) -> int:
-        ret = 0
+        ans = 0
         l = 0
         r = len(height) - 1
         leftMax = 0
@@ -11,13 +11,13 @@ class Solution:
                 if height[l] >= leftMax:
                     leftMax = height[l]
                 else:
-                    ret += (leftMax - height[l])
+                    ans += (leftMax - height[l])
                 l += 1
             else:
                 if height[r] >= rightMax:
                     rightMax = height[r]
                 else:
-                    ret += (rightMax - height[r])
+                    ans += (rightMax - height[r])
                 r -= 1
 
-        return ret
+        return ans

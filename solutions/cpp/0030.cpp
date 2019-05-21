@@ -3,7 +3,7 @@ public:
     vector<int> findSubstring(string s, vector<string>& words) {
         if (s.empty() || words.empty()) return {};
 
-        vector<int> ret;
+        vector<int> ans;
         unordered_map<string, int> map;
         for (const auto& word : words) map[word]++;
 
@@ -25,7 +25,7 @@ public:
                         index += wordLen;
                     }
                     if (count == words.size()) {
-                        ret.push_back(index);
+                        ans.push_back(index);
                         tempMap[s.substr(index, wordLen)]--;
                         count--;
                         index += wordLen;
@@ -38,6 +38,6 @@ public:
             }
         }
 
-        return ret;
+        return ans;
     }
 };

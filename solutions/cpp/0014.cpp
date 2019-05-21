@@ -4,7 +4,7 @@ public:
         if (strs.size() == 0) return "";
         if (strs.size() == 1) return strs[0];
 
-        string ret;
+        string ans;
         int minLen = strs[0].length();
 
         for (int i = 1; i < strs.size(); i++)
@@ -20,9 +20,9 @@ public:
                     break;
                 }
             if (!isMatch) break;
-            ret += c;
+            ans += c;
         }
 
-        return ret;
+        return ans;
     }
 };

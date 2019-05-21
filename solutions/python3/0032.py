@@ -1,6 +1,6 @@
 class Solution:
     def longestValidParentheses(self, s: str) -> int:
-        ret = 0
+        ans = 0
         left = 0
         right = 0
 
@@ -10,7 +10,7 @@ class Solution:
             else:
                 right += 1
             if left == right:
-                ret = max(ret, 2 * right)
+                ans = max(ans, 2 * right)
             elif right > left:
                 left = 0
                 right = 0
@@ -24,9 +24,9 @@ class Solution:
             else:
                 right += 1
             if left == right:
-                ret = max(ret, 2 * left)
+                ans = max(ans, 2 * left)
             elif left > right:
                 left = 0
                 right = 0
 
-        return ret
+        return ans

@@ -1,12 +1,12 @@
 class Solution:
     def generate(self, numRows: int) -> List[List[int]]:
-        ret = []
+        ans = []
 
         for i in range(1, numRows + 1):
-            ret.append([1] * i)
+            ans.append([1] * i)
 
         for i in range(2, numRows):
-            for j in range(1, len(ret[i]) - 1):
-                ret[i][j] = ret[i - 1][j - 1] + ret[i - 1][j]
+            for j in range(1, len(ans[i]) - 1):
+                ans[i][j] = ans[i - 1][j - 1] + ans[i - 1][j]
 
-        return ret
+        return ans

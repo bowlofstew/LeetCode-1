@@ -9,9 +9,9 @@ public:
     int dp(vector<int>& nums, int target, vector<int>& m) {
         if (target < 0) return 0;
         if (m[target] != -1) return m[target];
-        int ret = 0;
+        int ans = 0;
         for (const int num : nums)
-            ret += dp(nums, target - num, m);
-        return m[target] = ret;
+            ans += dp(nums, target - num, m);
+        return m[target] = ans;
     }
 };

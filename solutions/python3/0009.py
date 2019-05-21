@@ -3,11 +3,11 @@ class Solution:
         if x < 0:
             return False
 
-        ret = 0
+        ans = 0
         y = x
 
         while y:
-            ret = ret * 10 + y % 10
+            ans = ans * 10 + y % 10
             y //= 10
 
-        return ret == x
+        return ans == x

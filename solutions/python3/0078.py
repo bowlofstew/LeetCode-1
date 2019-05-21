@@ -1,14 +1,14 @@
 class Solution:
     def subsets(self, nums: List[int]) -> List[List[int]]:
-        ret = []
-        self.dfs(nums, len(nums), 0, [], ret)
-        return ret
+        ans = []
+        self.dfs(nums, len(nums), 0, [], ans)
+        return ans
 
-    def dfs(self, nums: List[int], target: int, s: int, curr: List[int], ret: List[List[int]]) -> None:
+    def dfs(self, nums: List[int], target: int, s: int, curr: List[int], ans: List[List[int]]) -> None:
         if target < 0:
             return
 
-        ret.append(curr)
+        ans.append(curr)
 
         for i in range(s, len(nums)):
-            self.dfs(nums, target - 1, i + 1, curr + [nums[i]], ret)
+            self.dfs(nums, target - 1, i + 1, curr + [nums[i]], ans)

@@ -27,10 +27,10 @@ public:
             fast = fast->next;
         }
 
-        auto ret = slow->next;
+        auto ans = slow->next;
         slow->next = NULL;
         fast->next = head;
 
-        return ret;
+        return ans;
     }
 };

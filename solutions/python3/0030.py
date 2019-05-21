@@ -3,7 +3,7 @@ class Solution:
         if not s or not words:
             return []
 
-        ret = []
+        ans = []
         dict = collections.defaultdict(int)
         for word in words:
             dict[word] += 1
@@ -24,7 +24,7 @@ class Solution:
                         count -= 1
                         index += wordLen
                     if count == len(words):
-                        ret.append(index)
+                        ans.append(index)
                         tempMap[s[index:index + wordLen]] -= 1
                         count -= 1
                         index += wordLen
@@ -33,4 +33,4 @@ class Solution:
                     count = 0
                     index = j + wordLen
 
-        return ret
+        return ans

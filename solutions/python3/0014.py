@@ -5,7 +5,7 @@ class Solution:
         if len(strs) == 1:
             return strs[0]
 
-        ret = ""
+        ans = ""
         minLen = len(strs[0])
 
         for i in range(1, len(strs)):
@@ -21,6 +21,6 @@ class Solution:
                     break
             if not isMatch:
                 break
-            ret += c
+            ans += c
 
-        return ret
+        return ans

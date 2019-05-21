@@ -10,16 +10,16 @@ class Solution:
         if not root:
             return []
 
-        ret = []
+        ans = []
         stack = []
         stack.append(root)
 
         while stack:
             node = stack.pop()
-            ret.append(node.val)
+            ans.append(node.val)
             if (node.right):
                 stack.append(node.right)
             if (node.left):
                 stack.append(node.left)
 
-        return ret
+        return ans

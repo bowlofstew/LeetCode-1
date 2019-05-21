@@ -1,7 +1,7 @@
 class Solution {
 public:
     int myAtoi(string str) {
-        long long ret = 0;
+        long long ans = 0;
         bool isNegative = false;
         int j = 0;
 
@@ -18,12 +18,12 @@ public:
             if (str[i] < '0' || str[i] > '9')
                 break;
             else {
-                ret = ret * 10 + (str[i] - '0');
-                if (isNegative && -ret <= INT_MIN) return INT_MIN;
-                if (!isNegative && ret >= INT_MAX) return INT_MAX;
+                ans = ans * 10 + (str[i] - '0');
+                if (isNegative && -ans <= INT_MIN) return INT_MIN;
+                if (!isNegative && ans >= INT_MAX) return INT_MAX;
             }
         }
 
-        return isNegative ? -ret : ret;
+        return isNegative ? -ans : ans;
     }
 };

@@ -1,7 +1,7 @@
 class Solution {
 public:
     string simplifyPath(string path) {
-        string ret;
+        string ans;
         string temp;
         stringstream ss(path);
         vector<string> stack;
@@ -15,8 +15,8 @@ public:
             }
         }
 
-        for (auto str : stack) ret += "/" + str;
+        for (auto str : stack) ans += "/" + str;
 
-        return ret.empty() ? "/" : ret;
+        return ans.empty() ? "/" : ans;
     }
 };

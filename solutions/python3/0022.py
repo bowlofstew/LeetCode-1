@@ -1,13 +1,13 @@
 class Solution:
     def generateParenthesis(self, n):
-        ret = []
-        self.helper('', n, n, ret)
-        return ret
+        ans = []
+        self.helper('', n, n, ans)
+        return ans
 
-    def helper(self, str, l, r, ret):
+    def helper(self, str, l, r, ans):
         if l == 0 and r == 0:
-            ret.append(str)
+            ans.append(str)
         if l > 0:
-            self.helper(str + '(', l - 1, r, ret)
+            self.helper(str + '(', l - 1, r, ans)
         if l < r:
-            self.helper(str + ')', l, r - 1, ret)
+            self.helper(str + ')', l, r - 1, ans)

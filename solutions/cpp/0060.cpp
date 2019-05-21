@@ -1,7 +1,7 @@
 class Solution {
 public:
     string getPermutation(int n, int k) {
-        string ret;
+        string ans;
         vector<int> nums(n);
         vector<int> fact(n, 1);
 
@@ -13,10 +13,10 @@ public:
         for (int i = n; i >= 1; i--) {
             int j = k / fact[i - 1];
             k %= fact[i - 1];
-            ret.append(to_string(nums[j]));
+            ans.append(to_string(nums[j]));
             nums.erase(nums.begin() + j);
         }
 
-        return ret;
+        return ans;
     }
 };

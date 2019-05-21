@@ -1,6 +1,6 @@
 class Solution:
     def myAtoi(self, str: str) -> int:
-        ret = 0
+        ans = 0
 
         str = str.strip()
         if not str:
@@ -13,6 +13,6 @@ class Solution:
         for c in str:
             if not c.isdigit():
                 break
-            ret = ret * 10 + ord(c) - ord('0')
+            ans = ans * 10 + ord(c) - ord('0')
 
-        return max(-2 ** 31, min(2 ** 31 - 1, sign * ret))
+        return max(-2 ** 31, min(2 ** 31 - 1, sign * ans))
