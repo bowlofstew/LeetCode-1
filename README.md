@@ -13,10 +13,10 @@ All codes are formatted by `clang-format` and `prettier`.
 ## Problem Sets
 
 <p align="center">
-  <img src="https://img.shields.io/badge/-154/1045%20=%2014.74%25%20Solved-blue.svg" />
+  <img src="https://img.shields.io/badge/-155/1045%20=%2014.83%25%20Solved-blue.svg" />
   <img src="https://img.shields.io/badge/-Easy%2047-brightgreen.svg" />
   <img src="https://img.shields.io/badge/-Medium%2083-yellow.svg" />
-  <img src="https://img.shields.io/badge/-Hard%2024-red.svg" />
+  <img src="https://img.shields.io/badge/-Hard%2025-red.svg" />
 </p>
 
 |#|Title|Solution|Difficulty|
@@ -148,7 +148,7 @@ All codes are formatted by `clang-format` and `prettier`.
 |0125|[Valid Palindrome](https://leetcode.com/problems/valid-palindrome)|[C++](./solutions/cpp/0125.cpp), [Python](./solutions/python3/0125.py)|Easy|
 |0126|[Word Ladder II](https://leetcode.com/problems/word-ladder-ii)||Hard|
 |0127|[Word Ladder](https://leetcode.com/problems/word-ladder)|[C++](./solutions/cpp/0127.cpp), [Python](./solutions/python3/0127.py)|Medium|
-|0128|[Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence)||Hard|
+|0128|[Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence)|[C++](./solutions/cpp/0128.cpp), [Python](./solutions/python3/0128.py)|Hard|
 |0129|[Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers)||Medium|
 |0130|[Surrounded Regions](https://leetcode.com/problems/surrounded-regions)||Medium|
 |0131|[Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning)||Medium|
