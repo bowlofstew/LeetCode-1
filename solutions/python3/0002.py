@@ -4,9 +4,11 @@
 #         self.val = x
 #         self.next = None
 
+
 class Solution:
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
-        curr = dummy = ListNode(None)
+        dummy = ListNode(None)
+        curr = dummy
         carry = 0
 
         while carry or l1 or l2:
@@ -14,7 +16,9 @@ class Solution:
             curr.next = ListNode(carry % 10)
             curr = curr.next
             carry //= 10
-            if l1: l1 = l1.next
-            if l2: l2 = l2.next
+            if l1:
+                l1 = l1.next
+            if l2:
+                l2 = l2.next
 
         return dummy.next

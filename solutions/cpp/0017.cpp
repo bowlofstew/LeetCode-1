@@ -13,7 +13,8 @@ public:
         for (const char& i : digits) {
             vector<string> tmp;
             for (const string& j : ans)
-                for (const char& k : map[i]) tmp.push_back(j + k);
+                for (const char& k : map[i])
+                    tmp.push_back(j + k);
             ans = tmp;
         }
 
