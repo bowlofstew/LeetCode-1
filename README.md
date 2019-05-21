@@ -13,10 +13,10 @@ All codes are formatted by `clang-format` and `prettier`.
 ## Problem Sets
 
 <p align="center">
-  <img src="https://img.shields.io/badge/-155/1045%20=%2014.83%25%20Solved-blue.svg" />
-  <img src="https://img.shields.io/badge/-Easy%2047-brightgreen.svg" />
-  <img src="https://img.shields.io/badge/-Medium%2083-yellow.svg" />
-  <img src="https://img.shields.io/badge/-Hard%2025-red.svg" />
+  <img src="https://img.shields.io/badge/-161/1045%20=%2015.41%25%20Solved-blue.svg" />
+  <img src="https://img.shields.io/badge/-Easy%2048-brightgreen.svg" />
+  <img src="https://img.shields.io/badge/-Medium%2087-yellow.svg" />
+  <img src="https://img.shields.io/badge/-Hard%2026-red.svg" />
 </p>
 
 |#|Title|Solution|Difficulty|
@@ -149,14 +149,14 @@ All codes are formatted by `clang-format` and `prettier`.
 |0126|[Word Ladder II](https://leetcode.com/problems/word-ladder-ii)||Hard|
 |0127|[Word Ladder](https://leetcode.com/problems/word-ladder)|[C++](./solutions/cpp/0127.cpp), [Python](./solutions/python3/0127.py)|Medium|
 |0128|[Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence)|[C++](./solutions/cpp/0128.cpp), [Python](./solutions/python3/0128.py)|Hard|
-|0129|[Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers)||Medium|
-|0130|[Surrounded Regions](https://leetcode.com/problems/surrounded-regions)||Medium|
-|0131|[Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning)||Medium|
-|0132|[Palindrome Partitioning II](https://leetcode.com/problems/palindrome-partitioning-ii)||Hard|
-|0133|[Clone Graph](https://leetcode.com/problems/clone-graph)||Medium|
-|0134|[Gas Station](https://leetcode.com/problems/gas-station)|[C++](./solutions/cpp/0134.cpp)|Medium|
+|0129|[Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers)|[C++](./solutions/cpp/0129.cpp), [Python](./solutions/python3/0129.py)|Medium|
+|0130|[Surrounded Regions](https://leetcode.com/problems/surrounded-regions)|[C++](./solutions/cpp/0130.cpp), [Python](./solutions/python3/0130.py)|Medium|
+|0131|[Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning)|[C++](./solutions/cpp/0131.cpp), [Python](./solutions/python3/0131.py)|Medium|
+|0132|[Palindrome Partitioning II](https://leetcode.com/problems/palindrome-partitioning-ii)|[C++](./solutions/cpp/0132.cpp), [Python](./solutions/python3/0132.py)|Hard|
+|0133|[Clone Graph](https://leetcode.com/problems/clone-graph)|[C++](./solutions/cpp/0133.cpp), [Python](./solutions/python3/0133.py)|Medium|
+|0134|[Gas Station](https://leetcode.com/problems/gas-station)|[C++](./solutions/cpp/0134.cpp), [Python](./solutions/python3/0134.py)|Medium|
 |0135|[Candy](https://leetcode.com/problems/candy)||Hard|
-|0136|[Single Number](https://leetcode.com/problems/single-number)||Easy|
+|0136|[Single Number](https://leetcode.com/problems/single-number)|[C++](./solutions/cpp/0136.cpp), [Python](./solutions/python3/0136.py)|Easy|
 |0137|[Single Number II](https://leetcode.com/problems/single-number-ii)||Medium|
 |0138|[Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer)||Medium|
 |0139|[Word Break](https://leetcode.com/problems/word-break)||Medium|

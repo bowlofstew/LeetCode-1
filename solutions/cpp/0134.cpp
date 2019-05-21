@@ -6,14 +6,14 @@ public:
         int sum = 0;
 
         for (int i = 0; i < gas.size(); i++) {
-            sum += gas[i] - cost[i];
             net += gas[i] - cost[i];
+            sum += gas[i] - cost[i];
             if (sum < 0) {
                 sum = 0;
                 ans = i + 1;
             }
         }
 
-        return (net < 0) ? -1 : ans;
+        return net < 0 ? -1 : ans;
     }
 };
