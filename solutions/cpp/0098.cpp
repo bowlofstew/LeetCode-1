@@ -7,11 +7,10 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
+
 class Solution {
 public:
-    bool isValidBST(TreeNode* root) {
-        return helper(root, NULL, NULL);
-    }
+    bool isValidBST(TreeNode* root) { return helper(root, NULL, NULL); }
 
 private:
     bool helper(TreeNode* root, TreeNode* minNode, TreeNode* maxNode) {

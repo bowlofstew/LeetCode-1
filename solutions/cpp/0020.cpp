@@ -7,8 +7,7 @@ public:
             if (c == '(' || c == '{' || c == '[') {
                 stack.push(c);
             } else {
-                if (stack.empty() ||
-                    (c == ')' && stack.top() != '(') ||
+                if (stack.empty() || (c == ')' && stack.top() != '(') ||
                     (c == '}' && stack.top() != '{') ||
                     (c == ']' && stack.top() != '['))
                     return false;

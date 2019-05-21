@@ -6,7 +6,8 @@ public:
         int numOfLetters = 0;
 
         for (const auto& word : words) {
-            if (numOfLetters + (int)curr.size() + (int)word.size() > maxWidth) {
+            if (numOfLetters + (int)curr.size() + (int)word.length() >
+                maxWidth) {
                 for (int i = 0; i < maxWidth - numOfLetters; i++) {
                     curr.size() - 1 == 0
                         ? curr[0].append(" ")
@@ -17,7 +18,7 @@ public:
                 numOfLetters = 0;
             }
             curr.push_back(word);
-            numOfLetters += word.size();
+            numOfLetters += word.length();
         }
         ans.push_back(ljust(join(curr, " "), maxWidth));
 

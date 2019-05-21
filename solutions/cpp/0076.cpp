@@ -11,9 +11,9 @@ public:
         int r = 0;
         int bestLeft = 0;
         int bestRight = 0;
-        int windowLen = s.size() + 1;
+        int windowLen = s.length() + 1;
 
-        for (int r = 0; r < s.size(); r++) {
+        for (int r = 0; r < s.length(); r++) {
             if (map.count(s[r]))
                 if (--map[s[r]] == 0)
                     required--;
@@ -33,6 +33,6 @@ public:
             }
         }
 
-        return windowLen == s.size() + 1 ? "" : s.substr(bestLeft, windowLen);
+        return windowLen == s.length() + 1 ? "" : s.substr(bestLeft, windowLen);
     }
 };

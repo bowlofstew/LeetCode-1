@@ -1,12 +1,12 @@
 class Solution {
 public:
     bool isInterleave(string s1, string s2, string s3) {
-        if (s1.size() + s2.size() != s3.size()) return false;
+        if (s1.length() + s2.length() != s3.length()) return false;
 
-        vector<bool> dp(s2.size() + 1);
+        vector<bool> dp(s2.length() + 1);
 
-        for (int i = 0; i <= s1.size(); i++)
-            for (int j = 0; j <= s2.size(); j++) {
+        for (int i = 0; i <= s1.length(); i++)
+            for (int j = 0; j <= s2.length(); j++) {
                 if (i == 0 && j == 0)
                     dp[j] = true;
                 else if (i == 0)
@@ -18,6 +18,6 @@ public:
                             (dp[j - 1] && s2[j - 1] == s3[i + j - 1]);
             }
 
-        return dp[s2.size()];
+        return dp[s2.length()];
     }
 };

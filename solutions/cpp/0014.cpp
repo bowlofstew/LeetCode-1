@@ -8,7 +8,7 @@ public:
         int minLen = strs[0].length();
 
         for (int i = 1; i < strs.size(); i++)
-            minLen = min(minLen, (int)strs[i].size());
+            minLen = min(minLen, (int)strs[i].length());
 
         bool isMatch = true;
 

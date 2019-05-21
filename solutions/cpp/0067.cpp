@@ -3,8 +3,8 @@ public:
     string addBinary(string a, string b) {
         string ans;
         int carry = 0;
-        int i = a.size() - 1;
-        int j = b.size() - 1;
+        int i = a.length() - 1;
+        int j = b.length() - 1;
 
         while (i >= 0 || j >= 0 || carry == 1) {
             if (i >= 0) carry += a[i--] - '0';

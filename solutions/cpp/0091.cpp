@@ -2,11 +2,11 @@ class Solution {
 public:
     int numDecodings(string s) {
         if (s.empty() || s[0] == '0') return 0;
-        if (s.size() == 1) return 1;
+        if (s.length() == 1) return 1;
 
         vector<int> dp = {1, 1, 0};
 
-        for (int i = 1; i < s.size(); i++) {
+        for (int i = 1; i < s.length(); i++) {
             dp[2] = 0;
             if (!isValid(s[i]) && !isValid(s[i - 1], s[i])) return 0;
             if (isValid(s[i])) dp[2] += dp[0];
