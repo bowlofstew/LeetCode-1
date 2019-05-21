@@ -13,10 +13,10 @@ All codes are formatted by `clang-format` and `prettier`.
 ## Problem Sets
 
 <p align="center">
-  <img src="https://img.shields.io/badge/-161/1045%20=%2015.41%25%20Solved-blue.svg" />
-  <img src="https://img.shields.io/badge/-Easy%2048-brightgreen.svg" />
-  <img src="https://img.shields.io/badge/-Medium%2087-yellow.svg" />
-  <img src="https://img.shields.io/badge/-Hard%2026-red.svg" />
+  <img src="https://img.shields.io/badge/-168/1045%20=%2016.08%25%20Solved-blue.svg" />
+  <img src="https://img.shields.io/badge/-Easy%2049-brightgreen.svg" />
+  <img src="https://img.shields.io/badge/-Medium%2092-yellow.svg" />
+  <img src="https://img.shields.io/badge/-Hard%2027-red.svg" />
 </p>
 
 |#|Title|Solution|Difficulty|
@@ -172,9 +172,9 @@ All codes are formatted by `clang-format` and `prettier`.
 |0149|[Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line)||Hard|
 |0150|[Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation)||Medium|
 |0151|[Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string)||Medium|
-|0152|[Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray)||Medium|
-|0153|[Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array)||Medium|
-|0154|[Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii)||Hard|
+|0152|[Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray)|[C++](./solutions/cpp/0152.cpp), [Python](./solutions/python3/0152.py)|Medium|
+|0153|[Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array)|[C++](./solutions/cpp/0153.cpp), [Python](./solutions/python3/0153.py)|Medium|
+|0154|[Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii)|[C++](./solutions/cpp/0154.cpp), [Python](./solutions/python3/0154.py)|Hard|
 |0155|[Min Stack](https://leetcode.com/problems/min-stack)||Easy|
 |0156|[Binary Tree Upside Down](https://leetcode.com/problems/binary-tree-upside-down)||Medium|
 |0157|[Read N Characters Given Read4](https://leetcode.com/problems/read-n-characters-given-read4)||Easy|
@@ -182,12 +182,12 @@ All codes are formatted by `clang-format` and `prettier`.
 |0159|[Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters)||Hard|
 |0160|[Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists)||Easy|
 |0161|[One Edit Distance](https://leetcode.com/problems/one-edit-distance)||Medium|
-|0162|[Find Peak Element](https://leetcode.com/problems/find-peak-element)||Medium|
+|0162|[Find Peak Element](https://leetcode.com/problems/find-peak-element)|[C++](./solutions/cpp/0162.cpp), [Python](./solutions/python3/0162.py)|Medium|
 |0163|[Missing Ranges](https://leetcode.com/problems/missing-ranges)||Medium|
 |0164|[Maximum Gap](https://leetcode.com/problems/maximum-gap)||Hard|
 |0165|[Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers)||Medium|
 |0166|[Fraction to Recurring Decimal](https://leetcode.com/problems/fraction-to-recurring-decimal)||Medium|
-|0167|[Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted)||Easy|
+|0167|[Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted)|[C++](./solutions/cpp/0167.cpp), [Python](./solutions/python3/0167.py)|Easy|
 |0168|[Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title)||Easy|
 |0169|[Majority Element](https://leetcode.com/problems/majority-element)|[C++](./solutions/cpp/0169.cpp)|Easy|
 |0170|[Two Sum III - Data structure design](https://leetcode.com/problems/two-sum-iii-data-structure-design)||Easy|
@@ -229,7 +229,7 @@ All codes are formatted by `clang-format` and `prettier`.
 |0206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)|[C++](./solutions/cpp/0206.cpp), [Python](./solutions/python3/0206.py)|Easy|
 |0207|[Course Schedule](https://leetcode.com/problems/course-schedule)||Medium|
 |0208|[Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree)||Medium|
-|0209|[Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum)||Medium|
+|0209|[Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum)|[C++](./solutions/cpp/0209.cpp), [Python](./solutions/python3/0209.py)|Medium|
 |0210|[Course Schedule II](https://leetcode.com/problems/course-schedule-ii)||Medium|
 |0211|[Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design)||Medium|
 |0212|[Word Search II](https://leetcode.com/problems/word-search-ii)||Hard|
@@ -242,7 +242,7 @@ All codes are formatted by `clang-format` and `prettier`.
 |0219|[Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii)|[C++](./solutions/cpp/0219.cpp)|Easy|
 |0220|[Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii)||Medium|
 |0221|[Maximal Square](https://leetcode.com/problems/maximal-square)||Medium|
-|0222|[Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes)||Medium|
+|0222|[Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes)|[C++](./solutions/cpp/0222.cpp), [Python](./solutions/python3/0222.py)|Medium|
 |0223|[Rectangle Area](https://leetcode.com/problems/rectangle-area)||Medium|
 |0224|[Basic Calculator](https://leetcode.com/problems/basic-calculator)||Hard|
 |0225|[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues)||Easy|
