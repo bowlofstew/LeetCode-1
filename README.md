@@ -15,10 +15,10 @@ Feel free to give me your feedback if any adjustment is needed. You can simply p
 ## Problem Sets
 
 <p align="center">
-  <img src="https://img.shields.io/badge/-150/1045%20=%2014.35%25%20Solved-blue.svg" />
-  <img src="https://img.shields.io/badge/-Easy%2046-brightgreen.svg" />
-  <img src="https://img.shields.io/badge/-Medium%2082-yellow.svg" />
-  <img src="https://img.shields.io/badge/-Hard%2022-red.svg" />
+  <img src="https://img.shields.io/badge/-153/1045%20=%2014.64%25%20Solved-blue.svg" />
+  <img src="https://img.shields.io/badge/-Easy%2047-brightgreen.svg" />
+  <img src="https://img.shields.io/badge/-Medium%2083-yellow.svg" />
+  <img src="https://img.shields.io/badge/-Hard%2023-red.svg" />
 </p>
 
 |#|Title|Solution|Difficulty|
@@ -140,12 +140,12 @@ Feel free to give me your feedback if any adjustment is needed. You can simply p
 |0115|[Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences)|[C++](./solutions/cpp/0115.cpp), [Python](./solutions/python3/0115.py)|Hard|
 |0116|[Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node)|[C++](./solutions/cpp/0116.cpp), [Python](./solutions/python3/0116.py)|Medium|
 |0117|[Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii)|[C++](./solutions/cpp/0117.cpp), [Python](./solutions/python3/0117.py)|Medium|
-|0118|[Pascal's Triangle](https://leetcode.com/problems/pascals-triangle)|[C++](./solutions/cpp/0118.cpp)|Easy|
-|0119|[Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii)|[C++](./solutions/cpp/0119.cpp)|Easy|
-|0120|[Triangle](https://leetcode.com/problems/triangle)||Medium|
+|0118|[Pascal's Triangle](https://leetcode.com/problems/pascals-triangle)|[C++](./solutions/cpp/0118.cpp), [Python](./solutions/python3/0118.py)|Easy|
+|0119|[Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii)|[C++](./solutions/cpp/0119.cpp), [Python](./solutions/python3/0119.py)|Easy|
+|0120|[Triangle](https://leetcode.com/problems/triangle)|[C++](./solutions/cpp/0120.cpp), [Python](./solutions/python3/0120.py)|Medium|
 |0121|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)|[C++](./solutions/cpp/0121.cpp), [Python](./solutions/python3/0121.py)|Easy|
-|0122|[Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii)||Easy|
-|0123|[Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii)||Hard|
+|0122|[Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii)|[C++](./solutions/cpp/0122.cpp), [Python](./solutions/python3/0122.py)|Easy|
+|0123|[Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii)|[C++](./solutions/cpp/0123.cpp), [Python](./solutions/python3/0123.py)|Hard|
 |0124|[Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum)||Hard|
 |0125|[Valid Palindrome](https://leetcode.com/problems/valid-palindrome)||Easy|
 |0126|[Word Ladder II](https://leetcode.com/problems/word-ladder-ii)||Hard|
