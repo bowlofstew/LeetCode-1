@@ -6,6 +6,7 @@
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
+
 class Solution {
 public:
     vector<ListNode*> splitListToParts(ListNode* root, int k) {
@@ -17,6 +18,7 @@ public:
 
         ListNode* head = root;
         ListNode* prev = NULL;
+
         for (int i = 0; i < k; i++, r--) {
             ans[i] = head;
             for (int j = 0; j < l + (r > 0); j++) {

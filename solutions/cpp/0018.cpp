@@ -9,10 +9,8 @@ public:
     }
 
 private:
-    void nSum(vector<int>& nums, int target, int n, vector<int>& path,
-              vector<vector<int>>& ans) {
-        if (nums.size() < n || n < 2 || target < nums[0] * n ||
-            target > nums.back() * n)
+    void nSum(vector<int>& nums, int target, int n, vector<int>& path, vector<vector<int>>& ans) {
+        if (nums.size() < n || n < 2 || target < nums[0] * n || target > nums.back() * n)
             return;
 
         if (n == 2) {

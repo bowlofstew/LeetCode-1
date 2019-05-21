@@ -7,12 +7,14 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
+
 class Solution {
 public:
     TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {
         return helper(0, 0, preorder.size(), preorder, inorder);
     }
 
+private:
     TreeNode* helper(int i, int j, int n, vector<int>& preorder, vector<int>& inorder) {
         if (n == 0) return NULL;
         TreeNode* root = new TreeNode(preorder[i]);

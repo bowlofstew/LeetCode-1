@@ -6,8 +6,7 @@ public:
         queue<pair<int, int>> q;
         vector<vector<int>> visited(n, vector<int>(1 << n));
 
-        for (int i = 0; i < graph.size(); i++)
-            q.push({i, 1 << i});
+        for (int i = 0; i < graph.size(); i++) q.push({i, 1 << i});
 
         int ans = 0;
         while (!q.empty()) {

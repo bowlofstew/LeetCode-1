@@ -6,9 +6,9 @@ public:
 
         for (int i = 0; i < NO_OF_BITS; i++) {
             temp = (num & (1 << i));
-            if (temp)
-                reverse_num |= (1 << ((NO_OF_BITS - 1) - i));
+            if (temp) reverse_num |= (1 << ((NO_OF_BITS - 1) - i));
         }
+
         return reverse_num;
     }
 };

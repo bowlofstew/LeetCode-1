@@ -1,8 +1,7 @@
 class Solution {
 public:
     string countAndSay(int n) {
-        unordered_map<int, string> map = {
-            {1, "1"}, {2, "11"}, {3, "21"}, {4, "1211"}, {5, "111221"}};
+        unordered_map<int, string> map = {{1, "1"}, {2, "11"}, {3, "21"}, {4, "1211"}, {5, "111221"}};
         if (n <= 5) return map[n];
 
         for (int i = 6; i < n + 1; i++) {

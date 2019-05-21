@@ -6,20 +6,9 @@
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
+
 class Solution {
 public:
-    ListNode* reverseList(ListNode* head) {
-        ListNode* prev = NULL;
-        ListNode* curr = head;
-        while (curr) {
-            ListNode* next = curr->next;
-            curr->next = prev;
-            prev = curr;
-            curr = next;
-        }
-        return prev;
-    }
-
     bool isPalindrome(ListNode* head) {
         if (!head || !head->next) return true;
 
@@ -30,7 +19,6 @@ public:
             fast = fast->next->next;
         }
 
-        // if fast != NULL, list has odd nodes
         if (fast) slow = slow->next;
         slow = reverseList(slow);
 
@@ -39,6 +27,22 @@ public:
             slow = slow->next;
             head = head->next;
         }
+
         return true;
+    }
+
+private:
+    ListNode* reverseList(ListNode* head) {
+        ListNode* prev = NULL;
+        ListNode* curr = head;
+
+        while (curr) {
+            ListNode* next = curr->next;
+            curr->next = prev;
+            prev = curr;
+            curr = next;
+        }
+
+        return prev;
     }
 };

@@ -2,7 +2,9 @@ class Solution {
 public:
     int canCompleteCircuit(vector<int>& gas, vector<int>& cost) {
         int ans = 0;
-        int net = 0, sum = 0;
+        int net = 0;
+        int sum = 0;
+
         for (int i = 0; i < gas.size(); i++) {
             sum += gas[i] - cost[i];
             net += gas[i] - cost[i];
@@ -11,6 +13,7 @@ public:
                 ans = i + 1;
             }
         }
+
         return (net < 0) ? -1 : ans;
     }
 };

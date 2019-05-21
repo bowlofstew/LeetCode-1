@@ -7,12 +7,14 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
+
 class Solution {
 public:
     TreeNode* constructFromPrePost(vector<int>& pre, vector<int>& post) {
         return helper(0, 0, pre.size(), pre, post);
     }
 
+private:
     TreeNode* helper(int i, int j, int n, vector<int>& pre, vector<int>& post) {
         if (n == 0) return NULL;
         TreeNode* root = new TreeNode(pre[i]);

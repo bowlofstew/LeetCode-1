@@ -6,15 +6,18 @@
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
+
 class Solution {
 public:
     ListNode* oddEvenList(ListNode* head) {
-        if (head == NULL) return NULL;
-        ListNode dummyOdd(0);
-        ListNode dummyEven(0);
-        ListNode* prevOdd = &dummyOdd;
-        ListNode* prevEven = &dummyEven;
+        if (!head) return NULL;
+
+        ListNode* dummyOdd = new ListNode(NULL);
+        ListNode* dummyEven = new ListNode(NULL);
+        ListNode* prevOdd = dummyOdd;
+        ListNode* prevEven = dummyEven;
         int index = 0;
+
         while (head) {
             auto next = head->next;
             head->next = NULL;
@@ -27,7 +30,8 @@ public:
             }
             head = next;
         }
-        prevOdd->next = dummyEven.next;
-        return dummyOdd.next;
+        prevOdd->next = dummyEven->next;
+
+        return dummyOdd->next;
     }
 };

@@ -8,8 +8,7 @@ public:
     }
 
 private:
-    void dfs(vector<int>& nums, int target, int s, vector<int>& path,
-             vector<vector<int>>& ans) {
+    void dfs(vector<int>& nums, int target, int s, vector<int>& path, vector<vector<int>>& ans) {
         if (target < 0) return;
 
         ans.push_back(path);

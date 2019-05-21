@@ -7,11 +7,9 @@ public:
         return ans;
     }
 
-    void dfs(string s, int depth, int index, vector<string>& path,
-             vector<string>& ans) {
+    void dfs(string s, int depth, int index, vector<string>& path, vector<string>& ans) {
         if (depth == 4 && index == s.length()) {
-            ans.push_back(path[0] + "." + path[1] + "." + path[2] + "." +
-                          path[3]);
+            ans.push_back(path[0] + "." + path[1] + "." + path[2] + "." + path[3]);
             return;
         }
         if (depth == 4 || index == s.length()) return;
