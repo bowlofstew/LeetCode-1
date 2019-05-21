@@ -13,12 +13,12 @@ class Solution:
 
         ans = []
         deque = collections.deque([root])
-        leftToRight = True
+        isLeftToRight = True
 
         while deque:
             currLevel = []
             for i in range(len(deque)):
-                if leftToRight:
+                if isLeftToRight:
                     node = deque.popleft()
                     currLevel.append(node.val)
                     if node.left:
@@ -33,6 +33,6 @@ class Solution:
                     if node.left:
                         deque.appendleft(node.left)
             ans.append(currLevel)
-            leftToRight = not leftToRight
+            isLeftToRight = not isLeftToRight
 
         return ans

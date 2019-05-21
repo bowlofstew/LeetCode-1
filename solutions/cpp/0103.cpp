@@ -16,13 +16,13 @@ public:
         vector<vector<int>> ans;
         deque<TreeNode*> deque;
         deque.push_back(root);
-        bool leftToRight = true;
+        bool isLeftToRight = true;
 
         while (!deque.empty()) {
             vector<int> currLevel;
             int currLevelSize = deque.size();
             for (int i = 0; i < currLevelSize; i++) {
-                if (leftToRight) {
+                if (isLeftToRight) {
                     TreeNode* node = deque.front();
                     deque.pop_front();
                     currLevel.push_back(node->val);
@@ -37,7 +37,7 @@ public:
                 }
             }
             ans.push_back(currLevel);
-            leftToRight = !leftToRight;
+            isLeftToRight = !isLeftToRight;
         }
 
         return ans;

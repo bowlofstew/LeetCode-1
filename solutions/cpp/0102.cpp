@@ -19,8 +19,7 @@ public:
 
         while (!queue.empty()) {
             vector<int> currLevel;
-            int currLevelSize = queue.size();
-            for (int i = 0; i < currLevelSize; i++) {
+            for (int i = queue.size(); i > 0; i--) {
                 TreeNode* node = queue.front();
                 queue.pop();
                 currLevel.push_back(node->val);
